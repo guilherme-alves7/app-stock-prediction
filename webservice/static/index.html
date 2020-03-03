@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WebService - Stock Prediction</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>WebService - Stock Prediction</h1>
+	<h2>Available Endpoints:</h3>	
+	<p>All endpoints are prefixed with: http://127.0.0.1:5000</p>
+
+	<h4>Forecast for one day</h4>
+
+	<h5>GET METHOD</h5>
+	<ul>
+		<li>/prediction/get/api/alpha</li>				
+		<ul>
+			<li>Ex: /prediction/get/api/alpha?symbol=AAPL</li>
+		</ul>		
+		
+		<li>/prediction/get/api/iex</li>
+		<ul>
+			<li>Ex: /prediction/get/api/iex?symbol=AAPL</li>
+		</ul>	
+	</ul>
+
+	<h5>POST METHOD</h5>
+	<ul>
+		<li>/prediction/post</li>
+		<ul>
+			<li>Ex: {
+			    "symbol": "AAPL",
+			    "close":[
+			        "174.8700",
+			        "174.3300",
+			        "174.2300",
+			        "172.9700",
+			        "171.0600",
+			        "172.0300",
+			        "170.9300"
+			    ]
+			}</li>
+		</ul>		
+	</ul>		
+	
+	<h4>Forecast for multiple days</h4>
+	
+	<h5>GET METHOD</h5>
+	<ul>
+		<li>/prediction/get/api/alpha/days</li>
+		<ul>
+			<li>Ex: /prediction/get/api/alpha/days?symbol=AAPL&days=7</li>
+		</ul>
+
+		<li>/prediction/get/api/iex/days</li>
+		<ul>
+			<li>Ex: /prediction/get/api/iex/days?symbol=AAPL&days=7</li>
+		</ul>
+	</ul>
+
+	<h5>POST METHOD</h5>
+	<ul>
+		<li>/prediction/post/days</li>
+		<ul>
+			<li>Ex: {
+			    "symbol": "AAPL",
+			    "days": "7",
+			    "close":[
+			        "174.8700",
+			        "174.3300",
+			        "174.2300",
+			        "172.9700",
+			        "171.0600",
+			        "172.0300",
+			        "170.9300"
+			    ]
+			}</li>
+		</ul>
+	</ul>
+
+
+	<footer>
+		<hr/>
+		<center>
+			<p>Developed by Guilherme Alves</p>
+		</center>
+	</footer>
+</body>
+</html>

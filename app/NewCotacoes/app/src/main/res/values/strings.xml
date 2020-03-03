@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Cotações</string>
+    <string name="action_settings">Sobre</string>
+    <string name="justificativa_app">Aplicativo construído para a aplicação de uma rede neural na previsão de cotações de empresas na bolsa de valores, proposto como Trabalho de Conclusão de Curso na instituição de ensino Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - Câmpus São João da Boa Vista.</string>
+</resources>

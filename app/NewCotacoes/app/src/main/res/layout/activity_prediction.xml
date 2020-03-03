@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PredictionActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cotação Atual"
+                android:textColor="@color/material_color_accent"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtLatestPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text=""
+                android:textColor="@color/primary_text"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cotação em:"
+                android:textColor="@color/material_color_accent"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio1d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:text="1 dia" />
+
+                <RadioButton
+                    android:id="@+id/radio7d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="2"
+                    android:text="7 dias" />
+
+                <RadioButton
+                    android:id="@+id/radio15d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="3"
+                    android:text="15 dias" />
+
+                <RadioButton
+                    android:id="@+id/radio30d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="30 dias" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnPredict"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="predictStock"
+                android:text="Fazer Previsão" />
+
+            <TextView
+                android:id="@+id/txtLabelPrediction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Cotação Prevista"
+                android:textColor="@color/material_color_accent"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtPredictedPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text=""
+                android:textColor="@color/primary_text"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/labelWarning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Aviso:"
+                android:textColor="@color/material_color_accent"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtWarning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Nossa rede neural ainda não foi treinada para fazer previsões para essa empresa. Solicite o treinamento abaixo."
+                android:textColor="@color/primary_text"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnRequestTraining"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="requestTraining"
+                android:text="Solicitar Treinamento" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

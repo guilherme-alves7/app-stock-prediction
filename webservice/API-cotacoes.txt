@@ -1,0 +1,8 @@
+https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=AAPL&apikey=86N2VD9UOJ28QPXG
+
+https://api.iextrading.com/1.0/stock/AAPL/chart/1m
+
+https://cloud.iexapis.com/stable/stock/AAPL/chart/1m?token=pk_d5b21f257bc045239f67819e432d7fbd
+
+
+https://www.quandl.com/api/v3/datasets/EOD/AAPL.json?column_index=4&start_date=2019-01-01&end_date=2019-03-22&collapse=daily&transform=rdiff&api_key=V1V7foWbWizvdCKcHRsd
