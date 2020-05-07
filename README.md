@@ -1,4 +1,4 @@
-# app-stockprediction
+# app-stock-prediction
 Previsão de cotação de empresas na bolsa de valores por meio de uma rede neural artificial
 
 Desenvolvido como Trabalho de Conclusão de Curso da Pós-Gradução em Desenvolvimento para Dispositivos Móveis na instituição de ensino IFSP.
